@@ -1,0 +1,208 @@
+
+/* ユニバーサルセレクター */
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: lightblue;
+}
+
+/* 要素型セレクター */
+button {
+    font-size: 30px ;
+    background-color:gainsboro;
+}
+
+/* セレクターリスト */
+h1, h2 {
+    color: darkslateblue;
+}
+
+/* IDセレクター 　※一個しか使えない*/
+#signup {
+    color: white;
+    background-color: darkslateblue;
+}
+
+/* クラスセレクター */
+.tag {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+}
+
+/* 子孫セレクター */
+.post a {
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* 隣接セレクター ※同じ親要素の子同士で<h2>の直後の<button>を選択*/
+h2 + button {
+    font-size: 20px;
+}
+
+
+/* 直下セレクター※<footer>の直下にある<a>を選択 */
+footer > a {
+    color: aqua;
+}
+
+/* 属性セレクター※type属性がpasswordの<input>をすべて選択 */
+input[type="password"] {
+    color: greenyellow;
+}
+
+a[href*="google"] {
+    color:magenta;
+}
+
+
+/* 疑似クラス※セレクターに付加するキーワードであり、選択された要素に
+対して特定の状態を指定する */
+.post button:hover {  /*postクラスのbutttonのみに適用*/
+    background-color: red;
+    color:aliceblue;
+}
+
+/* postクラスのリンクをhoverしたとき、アンダーラインを設ける */
+.post a:hover {
+    text-decoration :underline;
+}
+
+/* postクラスのbuttonをクリックしている間色変更 */
+.post button:active {
+    background-color: aqua;
+}
+
+/* 2個ごとに疑似クラスを適用する */
+.post:nth-of-type(2n) {
+    background-color: aliceblue;
+}
+
+
+/* 疑似要素　※セレクターに付加するキーワードで、選択された要素の
+部分にスタイル付けできるようにするもの */
+h2::first-letter {   /*h2の最初の文字だけ50pxにする*/
+    font-size: 50px;   
+}
+
+p::first-line {
+    color:purple;  /*1行目を紫にする*/
+}
+
+p::selection {
+    background-color: orange; /*セレクトしたものをオレンジ色にする*/
+}
+
+/* インポータント*/
+button {
+    background-color: magenta !important; /*インポータントはIDセレクタよりも強い*/
+}
+
+
+
+/* ユニバーサルセレクター */
+/* * {
+    background-color: cyan;
+} */
+
+/*
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1, h2 {
+    color: #1d3557;
+}
+
+#signup {
+    color: #f1faee;
+    background-color: #1d3557;
+}
+
+span {
+    color: #457b9d;
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+*/
+
+.post a {
+    color: #457b9d;
+    text-decoration: none;
+    font-weight: 700;
+}
+/*
+footer a {
+    color: #e63946;
+}
+
+h2 + button {
+    font-size: 20px;
+}
+
+footer > a {
+    color: #457b9d;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+a[href*="google"] {
+    color: magenta;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: aqua;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #c9d5c5;
+}
+
+h2:first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+::selection {
+    background-color: sandybrown;
+}
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+*/
+button:hover {
+    background-color: olive;
+}
+
+/*
+button {
+    background-color: magenta !important;
+}
+
+*/
